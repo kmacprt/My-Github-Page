@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+  
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("img/webdev.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}  
+
+  
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(177,249,246,1) 0%, rgba(80,175,173,1) 90% );
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(37,218,102,1) 0%, rgba(164,205,59,1) 90% );
+
+  color: black;
+}
+
+.topnav a.active {
+  background-image: linear-gradient( 109.6deg, #5c0ff9 11.2%, #3f35d4 91.1% );
+
+  color: yellow;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+  
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image: radial-gradient( circle farthest-corner at 53.8% 21.2%, #38ddd6 0%, rgba(75,126,92,1) 100.2% );
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size:50px">HI<img src = "https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" alt = "hand" heigh = "45" width = "45"/></h1>
+  <h1 style="font-size:60px">I'm Kavindu AJ</h1>
+  <p>And I'm a Web Developer</p>
+</div>
+
+
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="https://t.me/lkhitech" class="active">Home</a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="https://github.com/kjeymax">Github</a>
+  <a heref = "https://youtube.com/c/KavinduAj">Youtube</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="https://lkhitech.blogspot.com/">Blog</a>
+    <a href="https://kavinduaj.ml">About</a>
+  </div>
+  
+</div>
+
+
+<div class="main">
+    <h1>Computer Security </h1>
+    <h5>Wikipedia, Dec 7, 2019</h5>
+    <div class ="separator" style="clear: both; text-align: center;">
+      <img src="img/cs.png" border="o" data-original-heigh="600" data-original-width="900" height="500"></div>
+    <p style="text-align:justify;">Computer security, cybersecurity, or information technology security (IT security) is the protection of computer systems and networks from information disclosure, theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide. The field is becoming increasingly significant due to the continuously expanding reliance on computer systems, the Internet and wireless network standards such as Bluetooth and Wi-Fi, and due to the growth of "smart" devices, including smartphones, televisions, and the various devices that constitute the "Internet of things". Cybersecurity is also one of the significant challenges in the contemporary world, due to its complexity, both in terms of political usage and technology</p>
+    <br>
+    <h1>History</h1>
+    <p style="text-align:justify;">Since the Internet's arrival and with the digital transformation initiated in recent years, the notion of cybersecurity has become a familiar subject both in our professional and personal lives. Cybersecurity and cyber threats have been constant for the last 50 years of technological change. In the 1970s and 1980s, computer security was mainly limited to academia until the conception of the Internet, where, with increased connectivity, computer viruses and network intrusions began to take off. After the spread of viruses in the 1990s, the 2000s marked the institutionalization of cyber threats and cybersecurity.</p>
+    <br>
+    <p style="text-align:justify;">Finally, from the 2010s, large-scale attacks and government regulations started emerging. The April 1967 session organized by Willis Ware at the Spring Joint Computer Conference, and the later publication of the Ware Report, were foundational moments in the history of the field of computer security. Ware's work straddled the intersection of material, cultural, political, and social concerns. A 1977 NIST publication introduced the "CIA triad" of Confidentiality, Integrity, and Availability as a clear and simple way to describe key security goals While still relevant, many more elaborate frameworks have since been proposed. However, the 1970s and 1980s didn't have any grave computer threats because computers and the internet were still developing, and security threats were easily identifiable. Most often, threats came from malicious insiders who gained unauthorized access to sensitive documents and files. Although malware and network breaches existed during the early years, they did not use them for financial gain. However, by the second half of the 1970s, established computer firms like IBM started offering commercial access control systems and computer security software products. It started with Creeper in 1971. Creeper was an experimental computer program written by Bob Thomas at BBN. It is considered the first computer worm. In 1972, the first anti-virus software was created, called Reaper. It was created by Ray Tomlinson to move across the ARPANET and delete the Creeper worm. Between September 1986 and June 1987, a group of German hackers performed the first documented case of cyber espionage. The group hacked into American defense contractors, universities, and military bases' networks and sold gathered information to the Soviet KGB. The group was led by Markus Hess, who was arrested on 29 June 1987. He was convicted of espionage (along with two co-conspirators) on 15 Feb 1990. In 1988, one of the first computer worms, called Morris worm was distributed via the Internet. It gained significant mainstream media attention. In 1993, Netscape started developing the protocol SSL, shortly after the National Center for Supercomputing Applications (NCSA) launched Mosaic 1.0, the first web browser, in 1993. Netscape had SSL version 1.0 ready in 1994, but it was never released to the public due to many serious security vulnerabilities. These weaknesses included replay attacks and a vulnerability that allowed hackers to alter unencrypted communications sent by users. However, in February 1995, Netscape launched the Version 2.0.</p>
+  </div>
+</div>
+
+  <h1>Comments 🗯</h1>  
+<div class ="center">  
+<script async src="https://comments.app/js/widget.js?3" data-comments-app-website="I8tR5jK-" data-limit="5" data-color="29B127" data-dislikes="1" data-outlined="1" data-colorful="1"></script>
+</div> 
+  
+<div class="footer">
+  <h2><a href ="https://www.youtube.com/c/KavinduAj">Visit More Tutorial 👨‍💻</h2>
+</div>
+
+</body>
+</html>
